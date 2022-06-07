@@ -16,6 +16,11 @@ function Search() {
     let maxPercent = 90
 
     const handleInputChange = (inputValue) => {
+        if (currentPercentCompleted != 0) {
+            currentPercentCompleted = 0
+            setPercentCompleted(currentPercentCompleted)
+        }
+
         clearTimeout(searchTimeout)
         if (!inputValue) {
             setSearchValue('')
@@ -70,7 +75,7 @@ function Search() {
             setTimeout(() => {
                 currentPercentCompleted = 100
                 setPercentCompleted(currentPercentCompleted)
-            }, 3000);
+            }, 500);
         } catch (error) {
             console.log(error)
             setTimeout(() => {
