@@ -5,7 +5,7 @@ import UserTable from './app/component/UserTable';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <div className='container mx-auto px-4'>
         <h1 className='mx-auto px-4 my-4 text-4xl text-center'>Github User Search</h1>
         <Search />

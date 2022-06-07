@@ -91,13 +91,13 @@ function Search() {
     }, [searchValue])
 
     return (
-        <div className="search-input mt-14 mb-10">
+        <div className='search-input mt-14 mb-10'>
             <form onSubmit={(e) => e.preventDefault()}
-                className="text-center">
-                <input type="text"
-                    name="search"
+                className='text-center'>
+                <input type='text'
+                    name='search'
                     className='border-2 border-gray-400 p-2 w-80'
-                    placeholder="Enter search keyword"
+                    placeholder='Enter search keyword'
                     onChange={(e) => handleInputChange(e.currentTarget.value)}
                 />
                 {renderProgres()}
