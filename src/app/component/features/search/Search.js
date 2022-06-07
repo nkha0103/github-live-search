@@ -30,7 +30,7 @@ function Search() {
 
         searchTimeout = setTimeout(() => {
             setSearchValue(inputValue)
-        }, 500)
+        }, 1000)
     }
 
     const handleSearchProgress = (progressEvent) => {
