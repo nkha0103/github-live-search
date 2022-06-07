@@ -9,7 +9,7 @@ export function UserTable() {
     const users = searchResultData
 
     return (
-        <div className='users w-10/12 m-auto max-h-96 overflow-scroll'>
+        <div className='users w-10/12 m-auto max-h-96 overflow-auto'>
             {loading && <p className='text-center'>Loading</p>}
             {!loading && !didSearch && <p className='text-center'>Please enter search keyword</p>}
             {!loading && didSearch && !users.length && <p className='text-center'>Have No Data</p>}
