@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import './App.css';
 import Search from './app/component/features/search/Search';
 import UserTable from './app/component/UserTable';
 
