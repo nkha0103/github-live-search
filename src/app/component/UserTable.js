@@ -28,7 +28,7 @@ export function UserTable() {
                             <td className='w-10'><img className='user-data--avatar w-6/12 rounded mx-auto' src={userData.avatar_url} alt={userData.login} /></td>
                             <td className='px-6 py-3'><a href={userData.html_url} target='_blank'>{userData.login}</a></td>
                             <td className='px-6 py-3'>{userData.type}</td>
-                            <td className='px-6 py-3'>{userData.score}</td>
+                            <td className='px-6 py-3'>{Number.parseFloat(userData.score).toFixed(2)}</td>
                         </tr>
                     ))}
                 </tbody>
